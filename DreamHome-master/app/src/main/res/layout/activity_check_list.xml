@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".CheckList">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="CHECK LIST"
+                android:textColor="#9064DD"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/load"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/editview1"
+                    android:text="불러오기"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|end"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginRight="25dp"
+                        android:text="Yes"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="clip_horizontal|end"
+                        android:layout_marginEnd="27dp"
+                        android:layout_marginRight="27dp"
+                        android:text="No"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:paddingBottom="8dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView33"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1. 햇빛은 잘 들어오는가?"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView34"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 낮 12~2시에 불을 모두 끄고도 밝다면 채광이 좋은 것입니다."
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView35"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="2. 방음은 잘 되는가?"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView36"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 벽을 두드려 텅 빈/울리는 소리가 나는 지 확인하세요."
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView37"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="3. 수도는 잘 나오는가?"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 세면대, 싱크대, 변기를 동시에 틀어 수압을 확인하세요."
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView39"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="4. 배수는 잘 되는가?"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView40"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 세면대에 물을 가득 받아 놓고 잘 내려가는지 확인하세요."
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView41"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="5. 벽에 곰팡이가 있는가?"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView42"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 베란다, 벽과 장판 사이, 장롱 뒤, 창문/에어컨 쪽 벽지"
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView43"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:text="6. 환기가 잘 되는가?"
+                                    android:textColor="#000000" />
+
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView45"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="7. 난방이 잘 되는가?"
+                                    android:textColor="#000000" />
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView47"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="8. 주변 소음이 시끄럽지 않은가?"
+                                    android:textColor="#000000" />
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView49"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="9. 옵션 가구 중 파손된 시설이 있는가?"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView50"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 있다면 사진을 촬영하고 집주인에게 꼭 확인하세요."
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView51"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="10.낮과 밤 모두 확인 했는가?"
+                                    android:textColor="#000000" />
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView53"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="11. 방범창, 잠금장치, 방충망 여부/상태 확인하기"
+                                    android:textColor="#000000" />
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView55"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="12. 사생활 노출 확인하기"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView56"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 옆 건물과 가깝거나 저층이라면 사생활 노출 문제를 확인하세요"
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView57"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="13. 현관 도어락, cctv, 가로등 확인하기"
+                                    android:textColor="#000000" />
+
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton25"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView59"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="14. 주변 편의시설과 거리가 가까운가?"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView60"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 병원, 약국, 편의점, 대형 마트"
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton28"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView61"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="15. 교통이 편리한가?"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView62"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 버스정류장, 지하철 역"
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView63"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="16. 주차장과 주차 가능 대수 확인하기"
+                                    android:textColor="#000000" />
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView65"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="17. 공과금 확인하기"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/textView66"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tip! 금액, 내용을 집주인이나 전 세입자에게 확인하세요"
+                                    android:textColor="#595959"
+                                    android:textSize="10sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView67"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="18. 보증금과 월세가 예산에 적합한가?"
+                                    android:textColor="#000000" />
+
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton36"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/border_bottom"
+                            android:paddingBottom="8dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView69"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="19. 등기부등본 확인하기"
+                                    android:textColor="#000000" />
+
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:id="@+id/radiogroup19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:gravity="right|end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton37"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:text="y"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton38"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:text="n"
+                                    android:textColor="#00000000"
+                                    android:theme="@style/radioButton"
+                                    android:visibility="visible" />
+
+                            </RadioGroup>
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button4"
+            android:text="저장"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

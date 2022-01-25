@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.project_savedreamhouse">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="구해줘! 꿈의 집"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DetailToMap"></activity>
+        <activity android:name=".LatestSale" />
+        <activity android:name=".SexOffenderHTML" />
+        <activity android:name=".crimeHTML" /> <!-- receiver 추가 해야 알람 작동됨. -->
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".CommunityDetail" />
+        <activity android:name=".Community_write" />
+        <activity android:name=".Community" />
+        <activity android:name=".NotiFilter" />
+        <activity android:name=".Compare_s" />
+        <activity android:name=".Compare_c" />
+        <activity android:name=".CheckList" />
+        <activity android:name=".Cart" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FindPasswd" />
+        <activity android:name=".FindId" />
+        <activity android:name=".FindSale" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SaleDetail" />
+        <activity android:name=".AR" />
+        <activity android:name=".commentDetail" />
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="alursdhlbi" />
+    </application>
+
+</manifest>
